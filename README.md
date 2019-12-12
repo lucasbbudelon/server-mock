@@ -10,16 +10,23 @@ O Lightsail é uma plataforma de nuvem fácil de usar que oferece tudo o que voc
 ## Configuração do servidor
 
 ### git install
+```console
 sudo apt-get install git
-
+```
 ### nodejs install
+```console
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install nodejs
+```
 
 ### docker install
+```console
 sudo apt install docker.io
+```
 
 ## run server
+```console
 git clone https://github.com/lucasbbudelon/server-mock
 sudo npm install -g json-server
 sudo json-server server-mock/database.json -p 80 --host 0.0.0.0
+```
